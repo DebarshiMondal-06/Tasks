@@ -8,19 +8,16 @@ import { toast } from 'react-toastify';
 const FormComp = () => {
 
   const onFinish = async (values) => {
-    console.log(values);
     try {
       const result = await axios({
         url: "https://reqres.in/api/login",
         method: 'POST',
         data: values
       });
-      console.log(result.data);
       if (result) {
         toast.success(`Token:: ${result.data.token}`)
       }
     } catch (err) {
-      console.log(err.response);
       const { error } = err.response && err.response.data;
       if (error) toast.error(error);
     }
