@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar{
+  display: flex!important;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text{
+  color: #023047;
+  font-weight: bold;
+  font-size: large;
+  padding: 8px 15px;
+}
+.navbar .nav-btn{
+  display: flex;
+  gap: 1em;
+  padding: 0px 15px;
+}
+.nav-btn .btn-startfreetrail{
+  color: #fff;
+  padding: 8px 0px;
+  width: 150px;
+  background-color: #023047;
+  font-size: 14px;
+  border-radius: 0%;
+}
+.nav-btn .btn-login{
+  color: #fff;
+  padding: 8px 0px;
+  width: 150px;
+  background-color: #FB8500;
+  font-size: 14px;
+  border-radius: 0%;
+}
+.login-section{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.login-section .login{
+  text-align: center;
+}
+.login{
+  margin-top: -5%;
+}
+.form .form-input{
+  width: 60%;
+  padding: 8px 10px;
+  margin: 8px 0px;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  font-size: medium;
+}
+.form .form-input::placeholder{
+  font-size: small;
+  color: #333;
+}
+.form .submit-btn{
+  width: 60%;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: #023047;
+  color: #fff;
+  font-size: small;
+  border-radius: 2px;
+}
+.form .submit-btn:focus{
+  box-shadow: none!important;
+}
+.form .extras{
+  margin-top: 10px;
+  font-size: small;
+  position: relative;
+}
+.checkbx{
+  position: absolute;
+  left: 20%;
+}
+.forgot{
+  position: absolute;
+  right: 20%;
+}
+.login-section .image{
+  height: 100vh;
+  background-color: #023047;
+}
+@media only screen and (max-width: 900px) {
+  .login-section{
+    margin-top: 25%;
+  }
+  .navbar .nav-btn{
+    display: none;
+  }
+  .login-section .image{
+    display: none;
+  }
+  .form .form-input{
+    width: 90%;
+  }
+  .form .submit-btn{
+    width: 90%;
+  }
+  .checkbx{
+    left: 5%;
+  }
+  .forgot{
+    right: 5%;
+  }
 }
