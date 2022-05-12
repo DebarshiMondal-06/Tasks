@@ -2,13 +2,14 @@ name: pr-checker
 
 on:
   pull_request:
+    types:
+      - opened
     branches: 
       - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
