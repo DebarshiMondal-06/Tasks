@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Layout } from 'antd';
 import { Header } from 'antd/lib/layout/layout';
 import "./index.css";
-import FormComp from './FormComp';
+import FormComp from './FormComp'; 
 
 
 const App = () => {
