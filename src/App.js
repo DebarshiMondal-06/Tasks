@@ -11,7 +11,7 @@ const App = () => {
     <Layout>
       <Header className='navbar shadow-sm'>
         <div className='text'>
-          ATools
+          ATool
         </div>
         <div className='nav-btn'>
           <Button className='btn btn-startfreetrail'>StartFree Trail</Button>
