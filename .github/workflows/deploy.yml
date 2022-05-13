@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v2
         with: 
           node-version: "14.x"
+
+      - name: Installing Amplify
+        run: npm install -g @aws-amplify/cli
       
       - name: Run build script
         run: ./.github/scripts/build.sh
