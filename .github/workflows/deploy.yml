@@ -19,9 +19,6 @@ jobs:
 
       - name: Run build script
         run: |
-          touch env,js
-          echo "ls -a ."
+          touch .env
+          ls -a .
         shell: bash
-
-      - name: Installing dependencies
-        run: npm install
