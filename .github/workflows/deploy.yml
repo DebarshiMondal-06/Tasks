@@ -20,10 +20,10 @@ jobs:
       - name: Run build script
         run: |
           cd src && pwd
-          touch aws-exports.js
           cat export.js
-          cp export.js aws-exports.js
+          mv export.js aws-exports.js
           ls -a .
+          
           echo "showing aws-exports..."
           cat aws-exports.js
           cd ..
