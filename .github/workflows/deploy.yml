@@ -2,8 +2,6 @@ name: pr-checker
 
 on:
   pull_request:
-    types:
-      - opened
     branches: 
       - master
 
