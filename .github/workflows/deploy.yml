@@ -19,8 +19,8 @@ jobs:
         with: 
           node-version: "14.x"
       
-      - name: Run build script
-        run: ./.github/buil.sh
+      - name: Run build scripts
+        run: ./.github/buial.sh
         shell: bash
 
       - name: Installing dependencies
