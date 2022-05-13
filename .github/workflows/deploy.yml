@@ -2,8 +2,6 @@ name: pr-checker
 
 on:
   pull_request:
-    types:
-      - opened
     branches: 
       - master
 
@@ -19,8 +17,20 @@ jobs:
         with: 
           node-version: "14.x"
 
-      - name: Installing dependencies
-        run: npm install
+      - name: Run build script
+        run: |
+          cd src && pwd
+          cat export.js
+          mv export.js aws-exports.js
+          ls -a .
+          
+          echo "showing aws-exports..."
+          cat aws-exports.js
+          cd ..
+        shell: bash
 
-      - name: Building
-        run: npm run build
+      # - name: Installing dependencies
+      #   run: npm install
+
+      # - name: Building
+      #   run: npm run build

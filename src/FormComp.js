@@ -3,10 +3,12 @@ import { Form, Input, Checkbox, Button } from 'antd';
 import { Content } from 'antd/lib/layout/layout';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import Mom from './mom';
 
 
 const FormComp = () => {
-
+  console.log(Mom);
+  
   const onFinish = async (values) => {
     try {
       const result = await axios({
