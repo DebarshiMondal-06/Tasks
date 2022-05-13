@@ -19,8 +19,10 @@ jobs:
 
       - name: Run build script
         run: |
+          cd src && pwd
           touch mom.js
           ls -a .
+          cd ..
         shell: bash
 
       - name: Installing dependencies
