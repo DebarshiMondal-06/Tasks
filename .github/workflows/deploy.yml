@@ -17,15 +17,11 @@ jobs:
         with: 
           node-version: "14.x"
 
-      - name: Installing Amplify
-        run: npm install -g @aws-amplify/cli
-      
       - name: Run build script
-        run: ./.github/scripts/build.sh
+        run: |
+          touch env,js
+          echo "ls -a ."
         shell: bash
 
       - name: Installing dependencies
         run: npm install
-
-      - name: Building
-        run: npm run build
