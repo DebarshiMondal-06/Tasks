@@ -20,13 +20,17 @@ jobs:
       - name: Run build script
         run: |
           cd src && pwd
-          touch mom.js
+          touch aws-exports.js
+          cat export.js
+          cp export.js aws-exports.js
           ls -a .
+          echo "showing aws-exports..."
+          cat aws-exports.js
           cd ..
         shell: bash
 
-      - name: Installing dependencies
-        run: npm install
+      # - name: Installing dependencies
+      #   run: npm install
 
-      - name: Building
-        run: npm run build
+      # - name: Building
+      #   run: npm run build
